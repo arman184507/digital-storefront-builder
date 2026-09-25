@@ -1,0 +1,154 @@
+.settings-page {
+  min-height: 100vh;
+  padding: 40px;
+  background: #f8f9fc;
+}
+
+.settings-header {
+  margin-bottom: 30px;
+}
+
+.settings-header h1 {
+  margin: 0;
+  font-size: 32px;
+  color: #1f2937;
+}
+
+.settings-header p {
+  margin-top: 8px;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+.settings-card {
+  max-width: 950px;
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+.settings-card h2 {
+  margin: 0;
+  font-size: 22px;
+  color: #1f2937;
+}
+
+.settings-description {
+  margin: 8px 0 25px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.settings-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 9px;
+  font-size: 15px;
+  color: #1f2937;
+  background: white;
+  outline: none;
+  transition: 0.2s ease;
+  font-family: Arial, sans-serif;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #6c5ce7;
+  box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.save-settings-button {
+  width: fit-content;
+  padding: 13px 25px;
+  border: none;
+  border-radius: 9px;
+  background: #6c5ce7;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.save-settings-button:hover {
+  background: #5848d6;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .settings-page {
+    padding: 20px;
+  }
+
+  .settings-card {
+    padding: 20px;
+  }
+
+  .settings-header h1 {
+    font-size: 26px;
+  }
+
+  .save-settings-button {
+    width: 100%;
+  }
+}
+
+/* ===============================
+   STORE SELECTOR
+================================ */
+
+.store-selector {
+  width: 100%;
+  max-width: 950px;
+  margin-bottom: 25px;
+}
+
+.store-selector label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #222;
+}
+
+.store-selector select {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #d9d9e3;
+  border-radius: 8px;
+  background: white;
+  font-size: 15px;
+  color: #333;
+  cursor: pointer;
+}
+
+.store-selector select:focus {
+  outline: none;
+  border-color: #6c5ce7;
+}

@@ -1,0 +1,128 @@
+.add-product-page {
+  min-height: 100vh;
+  background: #f7f7fc;
+  padding: 50px 25px;
+}
+
+.add-product-container {
+  max-width: 850px;
+  margin: auto;
+}
+
+.add-product-header {
+  margin-bottom: 30px;
+}
+
+.add-product-header p {
+  color: #6c5ce7;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.add-product-header h1 {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.add-product-header span {
+  color: #777;
+}
+
+.add-product-card {
+  background: white;
+  border: 1px solid #e8e8ef;
+  border-radius: 18px;
+  padding: 35px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+}
+
+.product-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.product-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 22px;
+}
+
+.product-input label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.product-input input,
+.product-input select,
+.product-input textarea {
+  padding: 13px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+}
+
+.product-input input:focus,
+.product-input select:focus,
+.product-input textarea:focus {
+  border-color: #6c5ce7;
+}
+
+.product-input textarea {
+  resize: vertical;
+}
+
+.product-input small {
+  margin-top: 6px;
+  color: #888;
+  font-size: 12px;
+}
+
+.product-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.cancel-button,
+.add-button {
+  padding: 13px 22px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cancel-button {
+  background: white;
+  border: 1px solid #ddd;
+  color: #555;
+}
+
+.add-button {
+  background: #6c5ce7;
+  border: none;
+  color: white;
+}
+
+.add-button:hover {
+  background: #5848d4;
+}
+
+@media (max-width: 650px) {
+  .product-form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .add-product-card {
+    padding: 25px;
+  }
+}

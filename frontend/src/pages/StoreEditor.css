@@ -1,0 +1,305 @@
+.editor-page {
+  min-height: 100vh;
+  background: #f5f5fa;
+  transition: 0.3s ease;
+}
+
+.editor-header {
+  height: 70px;
+  background: white;
+  border-bottom: 1px solid #e5e5eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.editor-brand {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.editor-brand span {
+  color: #999;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.editor-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.editor-actions button,
+.save-button {
+  padding: 11px 18px;
+  border-radius: 9px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.my-stores-button {
+  border: 1px solid #6c5ce7;
+  background: white;
+  color: #6c5ce7;
+}
+
+.my-stores-button:hover {
+  background: #f3f0ff;
+}
+
+.preview-button {
+  border: 1px solid #ddd;
+  background: white;
+}
+
+.preview-button:hover {
+  background: #f7f7f7;
+}
+
+.publish-button,
+.save-button {
+  border: none;
+  background: #6c5ce7;
+  color: white;
+}
+
+.publish-button:hover,
+.save-button:hover {
+  background: #5848d4;
+}
+
+.editor-layout {
+  display: grid;
+  grid-template-columns: 330px 1fr;
+  min-height: calc(100vh - 70px);
+}
+
+.editor-panel {
+  background: white;
+  border-right: 1px solid #e5e5eb;
+  padding: 30px;
+}
+
+.panel-heading {
+  margin-bottom: 35px;
+}
+
+.panel-heading p {
+  color: #6c5ce7;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.panel-heading h2 {
+  font-size: 22px;
+  margin-top: 7px;
+}
+
+.setting-group {
+  margin-bottom: 25px;
+}
+
+.setting-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.setting-group input,
+.setting-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 9px;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+}
+
+.setting-group input:focus,
+.setting-group textarea:focus {
+  border-color: #6c5ce7;
+}
+
+.theme-options {
+  display: flex;
+  gap: 8px;
+}
+
+.theme {
+  flex: 1;
+  padding: 9px 5px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+}
+
+.purple-theme {
+  border-color: #6c5ce7;
+}
+
+.blue-theme {
+  border-color: #4285f4;
+}
+
+.green-theme {
+  border-color: #2da86b;
+}
+
+.save-button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.preview-area {
+  padding: 35px;
+  overflow: auto;
+}
+
+.preview-label {
+  font-size: 12px;
+  color: #888;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.store-preview {
+  max-width: 1000px;
+  margin: auto;
+  background: white;
+  min-height: 700px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.store-nav {
+  height: 65px;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  border-bottom: 1px solid #eee;
+  gap: 35px;
+}
+
+.store-logo {
+  font-weight: 700;
+  flex: 1;
+}
+
+.store-links {
+  display: flex;
+  gap: 25px;
+  color: #666;
+  font-size: 14px;
+}
+
+.cart-icon {
+  font-size: 18px;
+}
+
+.store-hero {
+  text-align: center;
+  padding: 80px 30px;
+  background: #f2efff;
+}
+
+.blue .store-hero {
+  background: #edf4ff;
+}
+
+.green .store-hero {
+  background: #ecfaf2;
+}
+
+.store-hero p {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #777;
+}
+
+.store-hero h1 {
+  font-size: 44px;
+  margin: 15px 0 10px;
+}
+
+.store-hero h3 {
+  color: #777;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.store-hero button {
+  border: none;
+  background: #6c5ce7;
+  color: white;
+  padding: 13px 25px;
+  border-radius: 9px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.blue .store-hero button {
+  background: #4285f4;
+}
+
+.green .store-hero button {
+  background: #2da86b;
+}
+
+.preview-products {
+  padding: 35px;
+}
+
+.preview-products h2 {
+  margin-bottom: 25px;
+}
+
+.product-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.preview-product {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 15px;
+}
+
+.product-image {
+  height: 150px;
+  background: #f0f0f3;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.preview-product h3 {
+  font-size: 15px;
+  margin-bottom: 7px;
+}
+
+.preview-product p {
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .editor-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .editor-panel {
+    border-right: none;
+    border-bottom: 1px solid #e5e5eb;
+  }
+
+  .product-preview-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,547 @@
+.my-stores-page {
+
+  min-height: 100vh;
+
+  background: #f8f9fc;
+
+  padding: 50px 30px;
+
+}
+
+.my-stores-container {
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+}
+
+.my-stores-header {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-end;
+
+  gap: 30px;
+
+  margin-bottom: 40px;
+
+}
+
+.page-label {
+
+  color: #7c3aed;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  margin-bottom: 8px;
+
+}
+
+.my-stores-header h1 {
+
+  font-size: 36px;
+
+  color: #171717;
+
+  margin-bottom: 8px;
+
+}
+
+.my-stores-header p {
+
+  color: #6b7280;
+
+  font-size: 16px;
+
+}
+
+.create-store-button {
+
+  border: none;
+
+  background: #7c3aed;
+
+  color: white;
+
+  padding: 13px 20px;
+
+  border-radius: 10px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+
+}
+
+.create-store-button:hover {
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 20px rgba(124, 58, 237, 0.2);
+
+}
+
+.stores-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 24px;
+
+}
+
+.store-card {
+
+  background: white;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 16px;
+
+  padding: 24px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+
+  transition: 0.2s;
+
+}
+
+.store-card:hover {
+
+  transform: translateY(-3px);
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+
+}
+
+.store-card-top {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+}
+
+.store-icon {
+
+  width: 48px;
+
+  height: 48px;
+
+  background: #f3e8ff;
+
+  border-radius: 12px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 23px;
+
+}
+
+.status {
+
+  padding: 6px 10px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+}
+
+.status.published {
+
+  background: #dcfce7;
+
+  color: #15803d;
+
+}
+
+.status.draft {
+
+  background: #fef3c7;
+
+  color: #92400e;
+
+}
+
+.store-card-content {
+
+  margin-top: 22px;
+
+}
+
+.store-card-content h2 {
+
+  font-size: 22px;
+
+  color: #171717;
+
+  margin-bottom: 6px;
+
+}
+
+.store-category {
+
+  color: #7c3aed !important;
+
+  font-size: 14px !important;
+
+  font-weight: 600;
+
+  margin-bottom: 14px;
+
+}
+
+.store-description {
+
+  color: #6b7280 !important;
+
+  font-size: 14px !important;
+
+  line-height: 1.6;
+
+}
+
+.store-card-footer {
+
+  border-top: 1px solid #eee;
+
+  margin-top: 22px;
+
+  padding-top: 18px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 16px;
+
+}
+
+.store-details {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 6px;
+
+  color: #6b7280;
+
+  font-size: 12px;
+
+}
+
+/* View Store button */
+
+.view-store-button {
+
+  border: none;
+
+  background: #7c3aed;
+
+  color: white;
+
+  padding: 10px 16px;
+
+  border-radius: 8px;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+
+  transition: 0.2s ease;
+
+}
+
+.view-store-button:hover {
+
+  background: #6d28d9;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 6px 14px rgba(124, 58, 237, 0.2);
+
+}
+
+.view-store-button:active {
+
+  transform: translateY(0);
+
+}
+
+/* Products button */
+
+.manage-products-button {
+
+  padding: 10px 16px;
+
+  border: 1px solid #6c5ce7;
+
+  border-radius: 8px;
+
+  background: white;
+
+  color: #6c5ce7;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+
+  white-space: nowrap;
+
+}
+
+.manage-products-button:hover {
+
+  background: #6c5ce7;
+
+  color: white;
+
+}
+
+/* Edit Store button */
+
+.edit-store-button {
+
+  border: 1px solid #7c3aed;
+
+  background: white;
+
+  color: #7c3aed;
+
+  padding: 10px 14px;
+
+  border-radius: 8px;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+
+  transition: 0.2s ease;
+
+}
+
+.edit-store-button:hover {
+
+  background: #7c3aed;
+
+  color: white;
+
+}
+
+/* Store action buttons */
+
+.store-card-actions {
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 10px;
+
+  width: 100%;
+
+}
+
+.store-card-actions button {
+
+  width: 100%;
+
+}
+
+/* Delete Store button */
+
+.delete-store-button {
+
+  border: 1px solid #dc2626;
+
+  background: white;
+
+  color: #dc2626;
+
+  padding: 10px 14px;
+
+  border-radius: 8px;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+
+  transition: 0.2s ease;
+
+}
+
+.delete-store-button:hover {
+
+  background: #dc2626;
+
+  color: white;
+
+}
+
+.empty-message {
+
+  background: white;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 16px;
+
+  padding: 60px 30px;
+
+  text-align: center;
+
+}
+
+.empty-message h2 {
+
+  margin-bottom: 8px;
+
+}
+
+.empty-message p {
+
+  color: #6b7280;
+
+  margin-bottom: 20px;
+
+}
+
+/* Dashboard button */
+
+.dashboard-back-button {
+
+  border: none;
+
+  background: transparent;
+
+  color: #6c4df6;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  padding: 0;
+
+  margin-bottom: 20px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+
+}
+
+.dashboard-back-button:hover {
+
+  color: #5135d4;
+
+  transform: translateX(-3px);
+
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+
+  .my-stores-page {
+
+    padding: 30px 20px;
+
+  }
+
+  .my-stores-header {
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+  }
+
+  .stores-grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+  .store-card-footer {
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+  }
+
+  .store-card-actions {
+
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+  .store-card-actions {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    width: 100%;
+
+  }
+
+  .view-store-button,
+
+  .manage-products-button,
+
+  .edit-store-button,
+
+  .delete-store-button {
+
+    width: 100%;
+
+  }
+
+}

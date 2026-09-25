@@ -1,0 +1,145 @@
+.edit-product-page {
+  min-height: 100vh;
+  background: #f8f9fc;
+  padding: 50px 20px;
+}
+
+.edit-product-card {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.edit-product-header {
+  margin-bottom: 30px;
+}
+
+.edit-product-header h1 {
+  margin: 0 0 8px;
+  font-size: 30px;
+  color: #1f1f2e;
+}
+
+.edit-product-header p {
+  margin: 0;
+  color: #777;
+  font-size: 15px;
+}
+
+.edit-product-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.1);
+}
+
+.form-group textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-group small {
+  color: #888;
+  font-size: 12px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.cancel-button,
+.update-button {
+  padding: 13px 22px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.cancel-button {
+  background: white;
+  color: #555;
+  border: 1px solid #ddd;
+}
+
+.cancel-button:hover {
+  background: #f5f5f5;
+}
+
+.update-button {
+  background: #7c3aed;
+  color: white;
+  border: none;
+}
+
+.update-button:hover {
+  background: #6d28d9;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 600px) {
+  .edit-product-page {
+    padding: 25px 15px;
+  }
+
+  .edit-product-card {
+    padding: 25px 20px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .cancel-button,
+  .update-button {
+    width: 100%;
+  }
+}

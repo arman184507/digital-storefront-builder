@@ -1,0 +1,209 @@
+.create-store-page {
+  min-height: 100vh;
+  background: #f7f7fc;
+  padding: 50px 25px;
+}
+
+.create-store-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.create-store-header {
+  margin-bottom: 30px;
+}
+
+.step-text {
+  color: #6c5ce7;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.create-store-header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.create-store-header > div > p:last-child {
+  color: #777;
+  font-size: 16px;
+}
+
+.store-form-card {
+  background: white;
+  border: 1px solid #eeeef3;
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+}
+
+.form-section {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 25px;
+  margin-bottom: 28px;
+}
+
+.form-section h2 {
+  font-size: 21px;
+  margin-bottom: 6px;
+}
+
+.form-section p {
+  color: #777;
+  font-size: 14px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.store-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 22px;
+}
+
+.store-input label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.store-input input,
+.store-input select,
+.store-input textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: inherit;
+  outline: none;
+  background: white;
+}
+
+.store-input textarea {
+  resize: vertical;
+}
+
+.store-input input:focus,
+.store-input select:focus,
+.store-input textarea:focus {
+  border-color: #6c5ce7;
+}
+
+.url-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.url-input span {
+  padding: 14px;
+  background: #f5f5f8;
+  color: #777;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.url-input input {
+  border: none;
+  border-radius: 0;
+}
+
+.url-input input:focus {
+  border: none;
+}
+
+/* Bottom buttons */
+
+.form-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 15px;
+  padding-top: 25px;
+  border-top: 1px solid #eee;
+}
+
+.back-button {
+  padding: 13px 24px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  background: white;
+  color: #555;
+  transition: 0.2s ease;
+}
+
+.back-button:hover {
+  background: #f5f5f8;
+}
+
+/* Fixed Continue button */
+
+form .continue-button {
+  flex: 1;
+  height: 54px;
+  padding: 13px 24px;
+  border: none;
+  border-radius: 10px;
+  background: #6c5ce7 !important;
+  color: #ffffff !important;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+  appearance: none;
+}
+
+form .continue-button:hover {
+  background: #5848d6 !important;
+}
+
+form .continue-button:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 700px) {
+
+  .create-store-page {
+    padding: 30px 15px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .store-form-card {
+    padding: 25px;
+  }
+
+  .create-store-header h1 {
+    font-size: 30px;
+  }
+
+  .url-input span {
+    font-size: 12px;
+  }
+
+  .form-actions {
+    flex-direction: row;
+  }
+
+  .continue-button {
+    min-width: 0;
+  }
+}

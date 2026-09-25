@@ -1,0 +1,192 @@
+.signup-page {
+  min-height: 100vh;
+  background: #f5f5ff;
+}
+
+.signup-container {
+  min-height: 100vh;
+  display: flex;
+}
+
+.signup-left {
+  width: 50%;
+  background: linear-gradient(135deg, #5b4bdb, #7c5cff);
+  color: white;
+  padding: 45px;
+  display: flex;
+  flex-direction: column;
+}
+
+.brand {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.left-content {
+  max-width: 520px;
+  margin: auto;
+}
+
+.left-content h1 {
+  font-size: 52px;
+  line-height: 1.1;
+  margin-bottom: 25px;
+}
+
+.left-content h1 span {
+  color: #ddd8ff;
+}
+
+.left-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #eeeaff;
+}
+
+.features {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  font-size: 16px;
+}
+
+.signup-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.signup-card {
+  width: 100%;
+  max-width: 460px;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+.signup-card h2 {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.input-group label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.input-group input {
+  padding: 14px 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+}
+
+.input-group input:focus {
+  border-color: #6c5ce7;
+}
+
+.signup-card button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: #6c5ce7;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.signup-card button:hover {
+  background: #5848d4;
+}
+
+.login-text {
+  text-align: center;
+  margin-top: 22px;
+  color: #777;
+}
+
+.login-text a {
+  color: #6c5ce7;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@media (max-width: 800px) {
+  .signup-container {
+    flex-direction: column;
+  }
+
+  .signup-left,
+  .signup-right {
+    width: 100%;
+  }
+
+  .signup-left {
+    min-height: 350px;
+  }
+
+  .left-content h1 {
+    font-size: 38px;
+  }
+}
+
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 45px;
+}
+
+.password-wrapper .password-toggle {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 30px;
+  height: 30px;
+
+  padding: 0;
+  margin: 0;
+
+  border: none;
+  background: transparent;
+
+  color: #555;
+  font-size: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.password-wrapper .password-toggle:hover {
+  background: transparent;
+  transform: translateY(-50%);
+}

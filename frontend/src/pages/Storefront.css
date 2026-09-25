@@ -1,0 +1,276 @@
+.storefront-page {
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+
+/* Header */
+
+.storefront-header {
+  height: 72px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eeeeee;
+  background: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.storefront-logo {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.storefront-header nav {
+  display: flex;
+  gap: 35px;
+}
+
+.storefront-header nav a {
+  text-decoration: none;
+  color: #444;
+  font-size: 15px;
+}
+
+.cart-button {
+  border: none;
+  background: #6c4ce8;
+  color: white;
+  padding: 11px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+
+/* Hero */
+
+.storefront-hero {
+  min-height: 480px;
+  display: flex;
+  align-items: center;
+  padding: 70px 10%;
+  background: linear-gradient(
+    135deg,
+    #f3efff,
+    #ffffff
+  );
+}
+
+.hero-content {
+  max-width: 650px;
+}
+
+.hero-label {
+  color: #6c4ce8;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 15px;
+}
+
+.hero-content h1 {
+  font-size: 56px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  color: #1f1f1f;
+}
+
+.hero-content > p:not(.hero-label) {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #666;
+  max-width: 520px;
+  margin-bottom: 30px;
+}
+
+.shop-button {
+  border: none;
+  background: #6c4ce8;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+/* Products */
+
+.products-section {
+  padding: 80px 7%;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-heading p {
+  color: #6c4ce8;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+}
+
+.section-heading h2 {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.section-heading span {
+  color: #777;
+  font-size: 15px;
+}
+
+.storefront-products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+/* Product Card */
+
+.storefront-product-card {
+  border: 1px solid #eeeeee;
+  border-radius: 14px;
+  overflow: hidden;
+  background: white;
+  transition: transform 0.2s ease,
+              box-shadow 0.2s ease;
+}
+
+.storefront-product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.product-image {
+  height: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5;
+  font-size: 70px;
+  overflow: hidden;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.product-image span {
+  font-size: 70px;
+}
+
+.product-details {
+  padding: 22px;
+}
+
+.product-details > span {
+  color: #6c4ce8;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.product-details h3 {
+  margin: 8px 0;
+  font-size: 20px;
+}
+
+.product-details p {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.product-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-bottom strong {
+  font-size: 19px;
+}
+
+.product-bottom button {
+  border: none;
+  background: #6c4ce8;
+  color: white;
+  padding: 9px 14px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+
+/* About */
+
+.about-section {
+  padding: 70px 10%;
+  text-align: center;
+  background: #f8f8fb;
+}
+
+.about-section h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.about-section p {
+  max-width: 600px;
+  margin: auto;
+  color: #666;
+  line-height: 1.7;
+}
+
+
+/* Responsive */
+
+@media (max-width: 800px) {
+
+  .storefront-header {
+    padding: 0 5%;
+  }
+
+  .storefront-header nav {
+    display: none;
+  }
+
+  .hero-content h1 {
+    font-size: 42px;
+  }
+
+  .storefront-products {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .storefront-hero {
+    padding: 50px 7%;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .products-section {
+    padding: 60px 5%;
+  }
+
+}
