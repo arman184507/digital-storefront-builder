@@ -7,8 +7,7 @@ Owners can manage products, customers, orders, and store analytics, while custom
 ---
 
 ## 🌐 Live Demo
-
-🚀 **Coming Soon**
+🔗https://digital-storefront-mu.vercel.app
 
 <!-- Add your deployed project link here later -->
 
